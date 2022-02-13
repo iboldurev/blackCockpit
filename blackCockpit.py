@@ -447,7 +447,7 @@ if __name__ == "__main__":
 
     def myexcepthook(exctype, value, traceback):
         if exctype == KeyboardInterrupt:
-            print "Handler code goes here"
+            print("Handler code goes here")
         else:
             _old_excepthook(exctype, value, traceback)
     sys.excepthook = myexcepthook
